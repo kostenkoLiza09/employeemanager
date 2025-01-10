@@ -1,6 +1,7 @@
 package tech.getarrays.employeemager.model;
 
 import jakarta.persistence.*;
+import jdk.jfr.Name;
 
 import java.io.Serializable;
 
@@ -12,7 +13,9 @@ public class Employee implements Serializable {
     private Long id;
 
 
+    @Name(value = "NameEmployee")
     private String name;
+
     private String email;
     private String jobTitle;
     private String phone;
